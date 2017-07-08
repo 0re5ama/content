@@ -18,19 +18,23 @@ class EmployeeController extends Controller
 		return view('model.emp.show')->with('emp', $emp);
     }
 
+
     public function create()
     {
 		return view('model.emp.create');
     }
 
+
     public function store(Request $request)
     {
-		$emp = new Employee;
-		$emp->name = request('name');
-		$emp->joined = request('joined');
-		$emp->save();
+		Employee::create([
+		'name' => request('name'),
+		'joined' => request('joined'),
+		]);
+
 		return redirect('/emp');
     }
+	
 
     public function edit(Employee $employee)
     {

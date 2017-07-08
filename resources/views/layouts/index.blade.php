@@ -5,9 +5,11 @@
 		<h1>@yield('title') List</h1>
 		<hr>
 		<div class='row'>
-			<ul class='list-group'>
-				@yield('data')
-			</ul>
+			<div class='col-sm-6'>
+				<ul class='list-group'>
+					@yield('data')
+				</ul>
+			</div>
 		</div>
 		<div class='row'>
 			<div class='col-sm-6'>

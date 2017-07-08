@@ -1,6 +1,6 @@
 a {
 	text-decoration: none;
-	color: #000;
+	color: #333;
 }
 
 a:hover {
@@ -12,13 +12,9 @@ li {
 	transition: all 0.3s ease-in-out;
 }
 
-.list-group-item {
-	width: 50%;
-}
-
 li.hoverlist:hover {
 	text-decoration: none;
-	margin-left: 40px;
+	padding-left: 40px;
 	color: #000;
 	transition: all 0.3s ease-in-out;
 }
