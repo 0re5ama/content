@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+php artisan make:model Model/Employee -mcr
+php artisan make:model Model/Usr -mcr
+php artisan make:model Model/Post -mcr
+php artisan make:model Model/Msg -mcr
