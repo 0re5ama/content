@@ -10,17 +10,17 @@ class MsgController extends Controller
     public function index()
     {
 		$msgs = Msg::all();
-		return view('msgindex')->with('msgs', $msgs);
+		return view('model.msg.index')->with('msgs', $msgs);
     }
 
     public function show(Msg $msg)
     {
-		return view('msgshow', compact('msg'));
+		return view('model.msg.show', compact('msg'));
     }
 
     public function create()
     {
-        //
+		return view('model.msg.create');
     }
 
     public function store(Request $request)
@@ -30,7 +30,7 @@ class MsgController extends Controller
 
     public function edit(Msg $msg)
     {
-        //
+		return view('model.msg.create');
     }
 
     public function update(Request $request, Msg $msg)

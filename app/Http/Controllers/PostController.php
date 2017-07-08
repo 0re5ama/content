@@ -11,17 +11,17 @@ class PostController extends Controller
     public function index()
     {
 		$posts = Post::all();
-		return view('postindex')->with('posts', $posts);
+		return view('model.post.index')->with('posts', $posts);
     }
 
     public function show(Post $post)
     {
-		return view('postshow', compact('post'));
+		return view('model.post.show', compact('post'));
     }
 
     public function create()
     {
-        //
+		return view('model.post.create');
     }
 
     public function store(Request $request)
@@ -31,7 +31,7 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        //
+		return view('model.post.create');
     }
 
     public function update(Request $request, Post $post)

@@ -10,17 +10,17 @@ class EmployeeController extends Controller
     public function index()
     {
 		$emps = Employee::all();
-		return view('empindex', compact('emps'));
+		return view('model.emp.index', compact('emps'));
     }
 
     public function show(Employee $emp)
     {
-		return view('empshow')->with('emp', $emp);
+		return view('model.emp.show')->with('emp', $emp);
     }
 
     public function create()
     {
-        //
+		return view('model.emp.create');
     }
 
     public function store(Request $request)
@@ -30,7 +30,7 @@ class EmployeeController extends Controller
 
     public function edit(Employee $employee)
     {
-        //
+		return view('model.emp.create');
     }
 
     public function update(Request $request, Employee $employee)
