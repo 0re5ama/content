@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
+
+Route::get('/emp', 'EmployeeController@index');
+Route::get('/emp/{id}', 'EmployeeController@show');
+Route::get('/usr', 'UsrController@index');
+Route::get('/usr/{id}', 'UsrController@show');
+Route::get('/post', 'PostController@index');
+Route::get('/post/{id}', 'PostController@show');
+Route::get('/msg', 'MsgController@index');
+Route::get('/msg/{id}', 'MsgController@show');
