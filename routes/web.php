@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/emp', 'EmployeeController@index');
-Route::get('/emp/{id}', 'EmployeeController@show');
+Route::get('/emp/{emp}', 'EmployeeController@show');
 Route::get('/usr', 'UsrController@index');
-Route::get('/usr/{id}', 'UsrController@show');
+Route::get('/usr/{usr}', 'UsrController@show');
 Route::get('/post', 'PostController@index');
-Route::get('/post/{id}', 'PostController@show');
+Route::get('/post/{post}', 'PostController@show');
 Route::get('/msg', 'MsgController@index');
-Route::get('/msg/{id}', 'MsgController@show');
+Route::get('/msg/{msg}', 'MsgController@show');
