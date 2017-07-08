@@ -31,7 +31,7 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-		return view('model.post.create');
+		return view('model.post.edit');
     }
 
     public function update(Request $request, Post $post)

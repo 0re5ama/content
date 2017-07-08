@@ -1,5 +1,9 @@
 @extends('layouts.index')
 
+@section('title')
+	Employee
+@endsection
+
 @section('data')
 	@foreach($emps as $emp)
 		<a href='/emp/{{$emp->id}}'>

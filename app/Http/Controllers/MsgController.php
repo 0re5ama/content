@@ -30,7 +30,7 @@ class MsgController extends Controller
 
     public function edit(Msg $msg)
     {
-		return view('model.msg.create');
+		return view('model.msg.edit');
     }
 
     public function update(Request $request, Msg $msg)

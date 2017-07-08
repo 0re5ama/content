@@ -1,5 +1,9 @@
 @extends('layouts.index')
 
+@section('title')
+	Message
+@endsection
+
 @section('data')
 	@foreach($msgs as $msg)
 		<a href='/msg/{{$msg->id}}'>

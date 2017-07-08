@@ -1,5 +1,9 @@
 @extends('layouts.index')
 
+@section('title')
+	User
+@endsection
+
 @section('data')
 	@foreach($usrs as $usr)
 		<a href='/usr/{{$usr->id}}'>

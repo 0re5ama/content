@@ -25,12 +25,16 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        //
+		$emp = new Employee;
+		$emp->name = request('name');
+		$emp->joined = request('joined');
+		$emp->save();
+		return redirect('/emp');
     }
 
     public function edit(Employee $employee)
     {
-		return view('model.emp.create');
+		return view('model.emp.edit');
     }
 
     public function update(Request $request, Employee $employee)

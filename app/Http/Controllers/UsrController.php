@@ -30,7 +30,7 @@ class UsrController extends Controller
 
     public function edit(Usr $usr)
     {
-		return view('model.usr.create');
+		return view('model.usr.edit');
     }
 
     public function update(Request $request, Usr $usr)

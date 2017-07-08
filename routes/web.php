@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 //Employee
 Route::get('/emp', 'EmployeeController@index');
-Route::get('/emp/{emp}', 'EmployeeController@show');
 Route::get('/emp/create', 'EmployeeController@create');
+Route::get('/emp/{emp}', 'EmployeeController@show');
 Route::post('/emp', 'EmployeeController@store');
 Route::get('/emp/{emp}/edit', 'EmployeeController@edit');
 Route::patch('/emp/{emp}', 'EmployeeController@update');
