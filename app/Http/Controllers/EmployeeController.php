@@ -27,6 +27,10 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
+		$this->validate(request(), [
+		'name' => 'required',
+		'joined' => 'required|date_format:Y|before:today',
+		]);
 		Employee::create([
 		'name' => request('name'),
 		'joined' => request('joined'),

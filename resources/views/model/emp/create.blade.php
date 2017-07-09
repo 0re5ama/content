@@ -30,4 +30,6 @@
 			</div>
 		</div>
 	</form>
+
+	@include('layouts.errors')
 @endsection
